@@ -8,6 +8,24 @@
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/skilljava/cdn/refs/heads/main/AriaGame.png" />
     
     <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.363.0?external=react,react-dom",
+    "gsap": "https://esm.sh/gsap@3.12.5",
+    "gsap/": "https://esm.sh/gsap@3.12.5/",
+    "lottie-react": "https://esm.sh/lottie-react@2.4.0?external=react,react-dom",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
@@ -65,7 +83,6 @@
       /* Ultra Smooth Dark Theme Reset */
       html, body {
         background-color: #020202;
-        /* Smooth deep gradient instead of noise */
         background: radial-gradient(circle at 50% 0%, #0a1810 0%, #020202 70%);
         color: #e0e0e0;
         width: 100%;
@@ -75,7 +92,6 @@
         min-height: 100vh;
       }
 
-      /* Subtle Perspective Grid */
       .perspective-grid {
         position: fixed;
         top: 0;
@@ -96,7 +112,6 @@
         -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%);
       }
 
-      /* Ambient Colored Blobs */
       .ambient-glow {
         position: fixed;
         width: 800px;
@@ -109,7 +124,6 @@
         animation: blob 20s infinite alternate;
       }
       
-      /* Modern Scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -130,7 +144,6 @@
         color: #000;
       }
       
-      /* Glassmorphism Utilities */
       .glass-panel {
         background: rgba(10, 15, 12, 0.6);
         backdrop-filter: blur(20px);
@@ -154,7 +167,6 @@
         transform: translateY(-5px);
       }
 
-      /* Text Effects */
       .text-glow {
         text-shadow: 0 0 20px rgba(0, 255, 163, 0.6);
       }
@@ -181,7 +193,6 @@
         100% { background-position: 0 80px; }
       }
 
-      /* Logo Periodic Spin Animation */
       @keyframes periodicSpin {
         0% { transform: rotateY(0deg); }
         15% { transform: rotateY(360deg); }
@@ -195,24 +206,7 @@
     </style>
 
 <link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.3.1",
-    "react/": "https://esm.sh/react@18.3.1/",
-    "react-dom": "https://esm.sh/react-dom@18.3.1",
-    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
-    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3?external=react,react-dom",
-    "lucide-react": "https://esm.sh/lucide-react@0.363.0?external=react,react-dom",
-    "gsap": "https://esm.sh/gsap@3.12.5",
-    "gsap/": "https://esm.sh/gsap@3.12.5/",
-    "lottie-react": "https://esm.sh/lottie-react@2.4.0?external=react,react-dom",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
-    "vite": "https://esm.sh/vite@^7.3.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/aria-host-project/assets/index-eurA6H54.js"></script>
+  <script type="module" crossorigin src="./assets/index-CKdM7umT.js"></script>
 </head>
   <body>
     <div class="perspective-grid"></div>
@@ -221,4 +215,3 @@
     <div id="root"></div>
 </body>
 </html>
-
